@@ -65,8 +65,6 @@ class GameContainer extends egret.Sprite {
 	private clickCard(e:egret.TouchEvent):void {
 		var card:Card = (e.target as Card);
 
-		console.log(card.getCardface());
-
 		if (this.firstCard == null) {
 			this.firstCard = card;
 			card.showFront();
